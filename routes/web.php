@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Gift;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $gifts = Gift::all();
+    return view('home', compact('gifts'));
 })->name('home');
