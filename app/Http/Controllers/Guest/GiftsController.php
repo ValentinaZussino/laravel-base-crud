@@ -118,5 +118,6 @@ class GiftsController extends Controller
     public function destroy(Gift $gift)
     {
         $gift->delete();
+        return redirect()->route('gifts.index');
     }
 }

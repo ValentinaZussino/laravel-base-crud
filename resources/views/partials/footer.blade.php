@@ -1,7 +1,7 @@
 <footer>
-    <div class="container">
+    <div class="container-hf">
        <div id="logo-footer">
-        <img src="{{Vite::asset('resources/img/logo_santa_claus_white.png')}}" alt="">
+        <img src={{Vite::asset('resources/img/logo_santa_claus_white.png')}} alt="">
        </div>
        <div>
         <p>Realizzato con &hearts; dal Gruppo Lampo</p>

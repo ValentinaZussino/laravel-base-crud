@@ -9,10 +9,6 @@
 @endsection
 
 
-@section('content')
-
-@endsection
-
 <script>
     function updateTimer() {
     future  = Date.parse("December 25, 2022 00:00:01");
