@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\GiftsController;
 use App\Models\Gift;
 use Illuminate\Support\Facades\Route;
 
@@ -16,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $gifts = Gift::all();
-    return view('home', compact('gifts'));
+    return view('home');
 })->name('home');
+
+Route::resource('gifts', GiftsController::class);
