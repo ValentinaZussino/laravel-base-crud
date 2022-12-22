@@ -18,14 +18,17 @@
 </head>
 
 <body>
-
-    @include('partials.header')
+    <header class="sticky-top position-absolute">
+        @include('partials.header')
+    </header>
+    
     <main>
         @yield('snow')
         @yield('countdown')
         @yield('content')
     </main>
     @include('partials.footer')
+    
 </body>
 
 </html>

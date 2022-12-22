@@ -18,7 +18,7 @@ canvas{ display: block; vertical-align: bottom; }
 #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
 .count-particles{ border-radius: 0 0 3px 3px; }
 
-// layouts pagine
+// sezioni content in absolute
 
 .prova {
     position: absolute;
@@ -61,3 +61,14 @@ canvas{ display: block; vertical-align: bottom; }
     left: 50%;
     transform: translate(-50%, -50%);
   }
+//  header
+header{
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+
+    img {
+        width: 50px;
+    }
+}
