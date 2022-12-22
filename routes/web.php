@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\Guest\GiftsController;
-use App\Models\Gift;
+use App\Http\Controllers\Guest\GiftsController as GiftsController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('gifts', GiftsController::class);
 
 Route::get('/', function () {
-    $gifts = Gift::all();
     return view('home');
 })->name('home');
 
-Route::resource('gifts', GiftsController::class);
+

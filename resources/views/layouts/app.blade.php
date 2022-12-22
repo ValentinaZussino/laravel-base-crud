@@ -8,6 +8,8 @@
     <title>@yield('page-title', 'Santa\'s List')</title>
 
     <!-- Fonts -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
@@ -19,6 +21,8 @@
 
     @include('partials.header')
     <main>
+        @yield('snow')
+        @yield('countdown')
         @yield('content')
     </main>
     @include('partials.footer')
