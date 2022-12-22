@@ -10,9 +10,7 @@
 
 
 @section('content')
-<section class="prova">
-    <h1>Hello Santa</h1>
-</section>
+
 @endsection
 
 <script>
