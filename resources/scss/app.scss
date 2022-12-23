@@ -115,6 +115,28 @@ canvas{ display: block; vertical-align: bottom; }
     flex-direction: column;
 }
 
+// form create/update
+.form-container{
+    text-align: center;
+    padding: 20px 0;
+
+    form{
+        
+
+    }
+
+    .submit-btn{
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+
+    &:hover{
+        opacity: 0.9;
+    }
+    }
+}
+
+
 // footer
 footer {
     width: 100%;
@@ -144,10 +166,10 @@ footer {
         a {
             color: white;
             font-size: 25px;
-            transition: 0.8s;
+            transition: 0.5s;
 
             &:hover{
-                color: black;
+                color: #f0dd5d;
             }
         }
     } 
